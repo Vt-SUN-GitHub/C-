@@ -1,0 +1,64 @@
+pwd   显示当前的目录
+
+git init  把当前目录变成git可以管理的目录
+
+git add xxx.xxx  将文件添加到暂存区
+
+git commit -m '(对于此次文件提交的注释)'   把文件提交到仓库
+
+git status   查看是否还有文件未提交
+
+git diff xxx.xxx  查看此文件到底改了什么内容
+
+git log   查看更改的历史记录
+
+git log --pretty=oneline  相比于git log 简洁
+
+git reset -hard HEAD^  当前版本回退到上一个版本
+
+git reset -hard HEAD ~100 回退到前100个版本
+
+cat xxx.xxx  查看某个文件的内容
+
+git reflog   获取到版本号
+
+git reset -hard (版本号)  恢复之前的内容
+
+git checkout --xxx.xxx (如果文件存在)把某文件在工作区做的全部修改全部撤销
+
+git checkout --xxx.xxx(如果文件不存在) 恢复xxx.xxx文件
+
+git rm xxx.xxx 删除文件，彻底删除需要再commit
+
+git remote add origin (网址)  本地仓库与GitHub仓库关联
+
+git push -u origin master 把本地仓库分支master内容推送到元仓库中（第一次）
+
+git push origin master  把本地master分支的最新修改推送到GitHub上
+
+git clone (网址)   克隆一个本地库
+
+git checkout -b dev 创建并切换到dev分支上
+=git branch dev+git checkout dev
+
+git merge dev  将dev分支上的内容合并到分支master上
+
+git checkout master 切换到master分支
+
+git branch -d name   删除分支
+
+git stash  将当前工作现场隐藏起来
+
+git stash list 查看隐藏的工作现场
+
+git stash apply  恢复 但stash内容不删除，需要用git stash drop删除
+
+git stash pop  回复的同时把stash内容也删除了
+
+git remote 查看远程库的信息
+
+git remote -v 查看远程库的详细信息
+
+
+
+
